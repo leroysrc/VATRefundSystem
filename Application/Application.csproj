@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Common\" />
+    <Folder Include="Features\Reports\" />
+    <Folder Include="Features\Reconciliation\" />
+    <Folder Include="Features\Authentication\" />
+    <Folder Include="Features\Refunds\" />
+    <Folder Include="Contracts\" />
+    <Folder Include="Behaviour\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Domain\Domain.csproj" />
+  </ItemGroup>
+
+</Project>
