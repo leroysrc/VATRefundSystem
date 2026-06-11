@@ -1,15 +1,26 @@
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+<<<<<<< HEAD
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddOpenApi();
+=======
+// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerGen();
+>>>>>>> e4d2c5a59179ffe0f67be027942cac019c50ea65
 
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
+<<<<<<< HEAD
     app.MapOpenApi();
+=======
+    app.UseSwagger();
+    app.UseSwaggerUI();
+>>>>>>> e4d2c5a59179ffe0f67be027942cac019c50ea65
 }
 
 app.UseHttpsRedirection();
@@ -31,7 +42,12 @@ app.MapGet("/weatherforecast", () =>
         .ToArray();
     return forecast;
 })
+<<<<<<< HEAD
 .WithName("GetWeatherForecast");
+=======
+.WithName("GetWeatherForecast")
+.WithOpenApi();
+>>>>>>> e4d2c5a59179ffe0f67be027942cac019c50ea65
 
 app.Run();
 

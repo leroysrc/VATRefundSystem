@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 @Api_HostAddress = http://localhost:5080
+=======
+@Api_HostAddress = http://localhost:5084
+>>>>>>> e4d2c5a59179ffe0f67be027942cac019c50ea65
 
 GET {{Api_HostAddress}}/weatherforecast/
 Accept: application/json

@@ -1,12 +1,17 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
+<<<<<<< HEAD
     <TargetFramework>net10.0</TargetFramework>
+=======
+    <TargetFramework>net8.0</TargetFramework>
+>>>>>>> e4d2c5a59179ffe0f67be027942cac019c50ea65
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
   <ItemGroup>
+<<<<<<< HEAD
     <Folder Include="Interfaces\" />
     <Folder Include="Specifications\" />
     <Folder Include="Events\" />
@@ -14,6 +19,14 @@
 
   <ItemGroup>
     <PackageReference Include="FluentValidation" Version="12.1.1" />
+=======
+    <Folder Include="Aggregates\" />
+    <Folder Include="Events\" />
+    <Folder Include="Interfaces\" />
+    <Folder Include="Specifications\" />
+    <Folder Include="ValueObjects\" />
+    <Folder Include="Entities\" />
+>>>>>>> e4d2c5a59179ffe0f67be027942cac019c50ea65
   </ItemGroup>
 
 </Project>
