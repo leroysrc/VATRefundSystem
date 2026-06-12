@@ -17,5 +17,29 @@ namespace Domain.ValueObjects
             Amount = amount;
             Currency = currency;
         }
+
+        public static Money Create(decimal amount, CurrencyCode currency)
+        {
+            if (amount < 0)
+                throw new ArgumentException("Amount cannot be negative.");
+            return new Money(amount, currency);
+        }
+
+        public bool Equals(Money? other)
+        {
+            if (other is null)
+                return false;
+            return Amount == other.Amount && Currency == other.Currency;
+        }
+
+        public override bool Equals (object? obj) => Equals(obj as Money);
+        public override int GetHashCode() => HashCode.Combine(Amount, Currency);
+
+        public static Money operator +(Money a, Money b)
+        {
+            if (a.Currency != b.Currency)
+                throw new InvalidOperationException("Cannot add amounts with different currencies.");
+            return new Money(a.Amount + b.Amount, a.Currency);
+        }
     }
 }
