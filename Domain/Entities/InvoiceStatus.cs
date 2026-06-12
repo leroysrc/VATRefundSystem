@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Domain.Entities
 {
-    internal class InvoiceStatus
+    public class InvoiceStatus
     {
     }
 }

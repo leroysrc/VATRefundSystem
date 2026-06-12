@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Domain.ValueObjects
 {
-    internal class DateRange
+    public class DateRange
     {
         // valid from/valid to date ranges
     }

@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Domain.Aggregates.Entity
 {
-    internal class Entity
+    public class Entity
     {
     }
 }

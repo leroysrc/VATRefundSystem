@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Domain.Aggregates.Invoice
 {
-    internal class Invoice_to_Fee
+    public class Invoice_to_Fee
     {
     }
 }

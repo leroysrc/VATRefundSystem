@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Domain.Aggregates.Refund
 {
-    internal class RefundLink
+    public class RefundLink
     {
     }
 }
